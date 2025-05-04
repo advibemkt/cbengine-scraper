@@ -1,10 +1,10 @@
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-core';
 
-const run = async () => {
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: ['--no-sandbox'],
-  });
+const browser = await puppeteer.launch({
+  executablePath: '/usr/bin/google-chrome',
+  headless: true,
+  args: ['--no-sandbox', '--disable-setuid-sandbox']
+});
 
   const page = await browser.newPage();
   const url = 'https://cbengine.com/search.html?log_srch=yes&cm=32&cs=toponly&rt=30&kw=&op=AND&field=any&du=&dp=y&ap=0&ao=Or&am=65&sc=rank&so=asc&sort=&c1c=mntm&c1o=GT&c1v=0&mode=cathop&recurring=';
