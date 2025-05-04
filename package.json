@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "puppeteer": "^21.3.8",
-"puppeteer-core": "^21.3.8"
+    "puppeteer-core": "^21.3.8"
   },
   "type": "module"
 }
