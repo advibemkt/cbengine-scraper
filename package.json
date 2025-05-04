@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Scraper de produtos da CBEngine",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "puppeteer-core": "^21.3.8"
-  }
+    "puppeteer": "^21.3.8"
+  },
+  "type": "module"
 }
